@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <img src="/Photos/Name.png" alt="logo" />
+      </a>
+      <nav>
+        <ul onclick="changeActive(event)" id="navList">
+          <li>
+            <a class="nav-text active" onclick="displayHomePage()">Home</a>
+          </li>
+          <li>
+            <a class="nav-text" onclick="displayAboutPage()">About</a>
+          </li>
+          <li>
+            <a class="nav-text" onclick="displayPortfolioPage()">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-text" onclick="displayBlogPage()">Blog</a>
+          </li>
+          <li>
+            <a class="nav-text" onclick="displayContactPage()">Contact</a>
+          </li>
+        </ul>
+        <button id="toggle-mode" onclick="modeChange()">
+          <ion-icon name="moon-outline" class="nav-text" id="moon"></ion-icon>
+          <ion-icon name="sunny-outline" class="nav-text" id="sun"></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <section id="home-page" class="active-page">
+      <h1 id="title">
+        Welcome to <br /><span id="title__frontend">Frontend</span>
+        <span id="title__solutions">Solutions</span>
+      </h1>
+      <h2 id="about-paragraph">
+        We are Frontend Solutions; a web design team based in Chester, UK. We
+        are a team of aspiring computer science students that specialise in
+        bringing small businesses to the world wide web.
+      </h2>
+      <div id="links">
+        <a id="call-to-action" onclick="displayContactPage()">
+          <h2 id="call-to-action__button">CONTACT</h2>
+          <ion-icon
+            id="call-to-action__arrow"
+            name="arrow-back-outline"
+          ></ion-icon>
+        </a>
+        <div id="social-media-links">
+          <a href="">
+            <ion-icon
+              name="logo-github"
+              class="social-media-link github"
+            ></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/frontendsolutionsdev/">
+            <ion-icon
+              name="logo-instagram"
+              class="social-media-link instagram"
+            ></ion-icon>
+          </a>
+          <a href="mailto:frontendsolutionsdev@gmail.com">
+            <ion-icon
+              name="mail-outline"
+              class="social-media-link mail-outline"
+            ></ion-icon>
+          </a>
+          <a href="">
+            <ion-icon
+              name="logo-linkedin"
+              class="social-media-link linkedin"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about-page"></section>
+    <section id="portfolio-page">
+      <h3 id = file-path>C:\Users\frontend-solutionsprojects:</h3>
+      <br />
+      <br />
+      <a  href=" " ><h2 class="project" id ="p1">&lt;Maths for Sally&gt;</h2></a>
+      <h4 class = "project-details">details</h4>
+      <br />
+      <h2 class="project" id ="p2">&lt;Driving Instructor&gt;</h2>
+      <h4 class = "project-details">details</h4>
+      <br />
+      <h2 class="project" id ="p3">&lt;Snug pt 2&gt;</h2>
+      <h4 class = "project-details">details</h4>
+      <br />
+      <h2 class="project" id ="p4">&lt;Other Project&gt;</h2>
+      <h4 class = "project-details">details</h4>
+      <br />
+      <h2 class="project" id ="p4">&lt;Insert Project&gt;</h2>
+      <h4 class = "project-details">details</h4>
+      <button class="purple-button"></button>
+      <button class="darkgreen-button"></button>
+      <button class="lightblue-button"></button>
+      <div style="position:relative;">
+        <img src="https://www.chesterstoves.co.uk/wp-content/uploads/2021/04/cropped-Snug-Logo-Mono-1.png" height = "60px"
+           style="position:relative; top:-610px; left:1010px; border:none;"
+           alt="snug-logo"
+           title="Photo of Will Bontrager" />
+        </div>
+        <div style="position:relative;">
+          <img src="https://www1.chester.ac.uk/sites/all/themes/global/images/uoc_logo_white.png" height = "90px"
+             style="position:relative; top:-330px; left:960px; border:none;"
+             alt="snug-logo"
+             title="Photo of Will Bontrager" />
+          </div>
+          <div style="position:relative;">
+            <img src="div style="position:relative;>
+          <img src="https://www.automatic-instructor.co.uk/wp-content/uploads/2018/06/driving-school-logo-1-e1528803269624.png" height = "90px"
+             style="position:relative; top:-590px; left:1510px; border:none;"
+             alt="snug-logo"
+             title="Photo of Will Bontrager" />
+          </div>" height = "90px"
+               style="position:relative; top:-330px; left:960px; border:none;"
+               alt="snug-logo"
+               title="Photo of Will Bontrager" />
+            </div>
+        
+    </section>
+    <section id="blog-page"></section>
+    <section id="contact-page">
+      <form action="mailto:frontendsolutionsdev@gmail.com">
+        <label for="name-input">Name:</label>
+        <input type="text" placeholder="Name" id="name-input" />
+        <label for="contact-reason">Contact Reason:</label>
+        <select name="contact-reason" id="contact-reason">
+          <option value="customer">Customer</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="enquiry">Enquiry</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="">Message:</label>
+        <input type="text" placeholder="Message" id="message-input" />
+        <input type="submit" value="send" />
+      </form>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

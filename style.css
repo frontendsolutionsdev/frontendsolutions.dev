@@ -1,0 +1,321 @@
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Removes all list styles */
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+
+/* Removes underline styles from hyperlinks */
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary: #222831;
+  --secondary: #393e46;
+  --tertiary: #eeeeee;
+  --highlight: #00adb5;
+
+  background-color: var(--primary);
+}
+
+/* Header */
+
+header {
+  padding: 0vw 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+nav {
+  display: flex !important; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  float: right;
+}
+
+.nav-text {
+  color: var(--tertiary);
+  font-family: Consolas;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0.2em;
+  transition: 0.3s ease-in-out;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-text:hover {
+  transition: 0.3s ease-in-out;
+  color: var(--highlight);
+  cursor: pointer;
+}
+
+#toggle-mode {
+  background-color: transparent;
+  border: none;
+}
+
+.active {
+  color: var(--highlight);
+  border-bottom: 2px solid var(--highlight);
+  padding-bottom: 3px;
+}
+
+#moon, #sun {
+  font-size: 30px;
+}
+
+#sun {
+  display: none;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+ul,
+li {
+  display: inline;
+}
+
+section {
+  display: none;
+}
+
+.active-page {
+  display: block;
+}
+
+
+/* Home page body styles */
+
+#home-page {
+  padding: 2vw 4vw;
+}
+
+#title {
+  color: var(--tertiary);
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+}
+
+#title__frontend {
+  color: var(--highlight);
+}
+
+#title__solutions {
+  color: var(--highlight);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+#about-paragraph {
+  color: var(--tertiary);
+  font-family: "Lexend", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  width: 70%;
+  margin-top: 30px;
+}
+
+#call-to-action__button {
+  color: var(--tertiary);
+  font-family: "Archivo", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  cursor: pointer;
+
+  margin-top: 30px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+#call-to-action__arrow {
+  font-size: 50px;
+  padding: 0;
+  margin: -7px 10px;
+  color: var(--tertiary);
+  transition: 0.3s ease-in-out;
+}
+
+#call-to-action:hover * {
+  color: var(--highlight);
+  transition: 0.3s ease-in-out;
+}
+
+#social-media-links {
+  float: right;
+}
+
+.social-media-link {
+  font-size: 50px;
+  color: var(--tertiary);
+  margin: 30px 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.github:hover {
+  color: #171515;
+}
+
+.instagram:hover {
+  color: #d62976;
+}
+
+.mail-outline:hover {
+  color: #34a853;
+}
+
+.linkedin:hover {
+  color: #0a66c2;
+}
+
+/* Contact page body styles */
+
+/* Portfolio page body styles */
+#file-path {
+  padding-left: 30px;
+  color: var(--tertiary);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  font-family: Consolas;
+}
+
+.project-details {
+  color: var(--tertiary);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Consolas;
+  padding-left: 30px;
+}
+
+
+.project {
+  font-weight: 500;
+  letter-spacing: 0px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding-left: 30px;
+  color: var(--tertiary);
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: Consolas;
+}
+
+
+.project:hover {
+  color: var(--highlight);
+  text-shadow: 0 0 5px var(--highlight),
+              0 0 25px var(--highlight),
+              0 0 50px var(--highlight),
+              0 0 100px var(--highlight);
+}
+
+.purple-button{
+  border-radius: 30px;
+  background: #810101;
+width: 400px;
+height: 450px;
+flex-shrink: 0;
+position: absolute;
+bottom: 100px; 
+left: 900px;
+border: none;
+
+}
+
+  .lightblue-button{
+    border-radius: 30px;
+background: #ffffff;
+width: 400px;
+height: 189px;
+flex-shrink: 0;
+position: absolute;
+left: 900px;
+bottom: 600px;
+border: none;
+  }
+
+  .darkgreen-button{
+    border-radius: 30px;
+    background: #77bec7;
+    width: 400px;
+    height: 189px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 1400px;
+    bottom: 400px;
+    border: none;
+  }
+
