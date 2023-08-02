@@ -319,3 +319,211 @@ border: none;
     border: none;
   }
 
+  #uoc-logo{
+    position:absolute; top:-330px; left:960px; border:none;
+  }
+
+  #driving-logo{
+    position:absolute; top:-590px; left:1510px; border:none
+  }
+
+  #snug-logo{
+    position:absolute; top:-610px; left:1010px; border:none;
+  }
+
+  /*media for surface pro 4 5 6 7*/
+  @media only screen and (max-width:2736px) {
+    /* home page @media */
+    a {
+      text-decoration: none;
+    }
+    
+    :root {
+      --primary: #222831;
+      --secondary: #393e46;
+      --tertiary: #eeeeee;
+      --highlight: #00adb5;
+    
+      background-color: var(--primary);
+    }
+    
+    /* Header */
+    
+    header {
+      padding: 0vw 2vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:space-between;
+    }
+    
+    nav {
+      display: flex !important; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      float: right;
+    }
+    
+    .nav-text {
+      color: var(--tertiary);
+      font-family: Consolas;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0 0.2em;
+      transition: 0.3s ease-in-out;
+      background-color: transparent;
+      border: none;
+    }
+    
+    .nav-text:hover {
+      transition: 0.3s ease-in-out;
+      color: var(--highlight);
+      cursor: pointer;
+    }
+    
+    #toggle-mode {
+      background-color: transparent;
+      border: none;
+    }
+    
+    .active {
+      color: var(--highlight);
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 3px;
+    }
+    
+    #moon, #sun {
+      font-size: 30px;
+    }
+    
+    #sun {
+      display: none;
+    }
+    
+    #logo {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    
+    ul,
+    li {
+      display: inline;
+    }
+    
+    section {
+      display: none;
+    }
+    
+    .active-page {
+      display: block;
+    }
+    /* [end of] home page @media */
+
+    /* [start of] porfolio page @media */
+    #file-path {
+      padding-left: 30px;
+      color: var(--tertiary);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 90px;
+      font-family: Consolas;
+    }
+    
+    .project-details {
+      color: var(--tertiary);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      font-family: Consolas;
+      padding-left: 30px;
+    }
+    
+    
+    .project {
+      font-weight: 500;
+      letter-spacing: 0px;
+      cursor: pointer;
+      transition: 0.5s;
+      padding-left: 30px;
+      color: var(--tertiary);
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 200;
+      font-family: Consolas;
+    }
+    
+    
+    .project:hover {
+      color: var(--highlight);
+      text-shadow: 0 0 5px var(--highlight),
+                  0 0 25px var(--highlight),
+                  0 0 50px var(--highlight),
+                  0 0 100px var(--highlight);
+    }
+    
+    .purple-button{
+      border-radius: 90px;
+      background: #393E46;
+    width: 350px;
+    height: 380px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 30px; 
+    left: 640px;
+    border: none;
+    
+    }
+    
+      .lightblue-button{
+        border-radius: 30px;
+    background: #393E46;
+    width: 350px;
+    height: 189px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 640px;
+    bottom: 430px;
+    border: none;
+      }
+    
+      .darkgreen-button{
+        border-radius: 30px;
+        background: #393E46;
+        width: 300px;
+        height: 587px;
+        flex-shrink: 0;
+        position: absolute;
+        left: 1040px;
+        bottom: 30px;
+        border: none;
+      }
+
+      #uoc-logo{
+        position: absolute;
+        left: 680px;
+        top: -230px;
+      }
+
+      #snug-logo{
+        position: absolute;
+        left: 730px;
+        top: -500px;
+      }
+
+      #driving-logo{
+        position: absolute;
+        left: 1075px;
+        top: -320px;
+        height: 120px;
+      }
+    
+    /* [end of] porfolio page @media */
+  }
+  
