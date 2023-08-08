@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navFlex">
+        <a href="index.html" id="logo">
+          <img src="/Photos/Name.png" alt="logo" />
+        </a>
+        <button id="menu" onclick="displayMobileNavigation()">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <nav id="nav">
+          <ul id="navList">
+            <li>
+              <a id="home" class="nav-text active" onclick="displayHomePage()"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a id="about" class="nav-text" onclick="displayAboutPage()"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                id="portfolio"
+                class="nav-text"
+                onclick="displayPortfolioPage()"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a id="blog" class="nav-text" onclick="displayBlogPage()">Blog</a>
+            </li>
+            <li>
+              <a id="contact" class="nav-text" onclick="displayContactPage()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <button id="toggle-mode" onclick="modeChange()">
+            <ion-icon name="moon-outline" class="nav-text" id="moon"></ion-icon>
+            <ion-icon name="sunny-outline" class="nav-text" id="sun"></ion-icon>
+          </button>
+        </nav>
+      </div>
+      <nav id="mobileNav">
+        <ul id="navList">
+          <li>
+            <a id="home" class="nav-text active" onclick="displayHomePage()"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a id="about" class="nav-text" onclick="displayAboutPage()"
+              >About</a
+            >
+          </li>
+          <li>
+            <a id="portfolio" class="nav-text" onclick="displayPortfolioPage()"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a id="blog" class="nav-text" onclick="displayBlogPage()">Blog</a>
+          </li>
+          <li>
+            <a id="contact" class="nav-text" onclick="displayContactPage()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button id="toggle-mode" onclick="modeChange()">
+          <ion-icon name="moon-outline" class="nav-text" id="moon"></ion-icon>
+          <ion-icon name="sunny-outline" class="nav-text" id="sun"></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="home-page" class="active-page">
+        <h1 class="heading-text">
+          Welcome to <br /><span id="heading-text__frontend">Frontend</span>
+          <span id="heading-text__solutions">Solutions</span>
+        </h1>
+        <h2 class="body-text">
+          We are Frontend Solutions; a web design team based in Chester, UK. We
+          are a team of aspiring computer scientists that specialise in
+          bringing businesses to the world wide web.
+        </h2>
+        <div id="links">
+          <a id="call-to-action" onclick="displayContactPage()">
+            <h2 class="call-to-action-text">CONTACT</h2>
+            <ion-icon
+              id="call-to-action__arrow"
+              name="arrow-back-outline"
+            ></ion-icon>
+          </a>
+          <div id="social-media-links">
+            <a href="https://github.com/frontendsolutionsdev">
+              <ion-icon
+                name="logo-github"
+                class="social-media-link github"
+              ></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/frontendsolutionsdev/">
+              <ion-icon
+                name="logo-instagram"
+                class="social-media-link instagram"
+              ></ion-icon>
+            </a>
+            <a href="mailto:frontendsolutionsdev@gmail.com">
+              <ion-icon
+                name="mail-outline"
+                class="social-media-link mail-outline"
+              ></ion-icon>
+            </a>
+            <a href="">
+              <ion-icon
+                name="logo-linkedin"
+                class="social-media-link linkedin"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about-page">
+        <div id="content">
+          <div>
+            <h3 class="nav-text">C:\Users\frontend-solutions\about</h3>
+            <h1 class="heading-text">About Us:</h1>
+            <p class="body-text">
+              Frontend Solutions is a digital solutions provider that
+              specializes in custom website design services, social media
+              management/creation in the United Kingdom.
+            </p>
+            <h1 class="heading-text">Why Choose Frontend Solutions?</h1>
+            <p class="body-text">
+              Frontend Solutions believes in bringing businesses ideas to life.
+              Which is why we focus on bringing you dream to the world wide web,
+              down to the minute details.
+            </p>
+            <h1 class="heading-text">What we offer:</h1>
+            <p class="body-text">
+              -Bespoke web design <br />-Other similar stuff <br />-More similar
+              stuff
+            </p>
+          </div>
+          <a id="call-to-action" onclick="displayContactPage()">
+            <h2 class="heading-text">“”</h2>
+            <h2 class="call-to-action-text">REQUEST A QUOTE</h2>
+            <h2 class="heading-text">“”</h2>
+          </a>
+        </div>
+      </section>
+      <section id="portfolio-page">
+        <div id="articles">
+          <article>
+          <h3 class="nav-text">C:\Users\frontend-solutions\portfolio</h3>
+            <article>
+            <h1 class="heading-text">Maths.sql</h1>
+            <p class="body-text">A beautiful website designed to provide high school students
+               with a wealth of resources to aid them in their studies.</p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="unknown">
+          </article>
+          <article>
+            <h1 class="heading-text">Instructor.html</h1>
+            <p class="body-text">A sleek professional website to match the sleek skills of Reubens driving instructor.</p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+          </article>
+          <article>
+            <h1 class="heading-text">Snug.html</h1>
+            <p class="body-text">A gorgeous website advertising the incredible new line of fireplaces by snug.</p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+          </article>
+          <article>
+            <h1 class="heading-text">Toms Joinery.css</h1>
+            <p class="body-text">Toms wood.</p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+          </article>
+        </div>
+        <div id="photos">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section>
+      <section id="blog-page">
+        <div id="blogs">
+          <blog>
+          <h3 class="nav-text">C:\Users\frontend-solutions\blog</h3>
+            <blog>
+            <h1 class="heading-text">Best JavaScript Framework.js</h1>
+            <p class="body-text">Read our newest article where we evaluate which JavaScript Framework is the best in 2023 where we give a breakdown of which task each one is suited to, plus the advantages, disadvantages and any little quirks of any of each framework.</p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+          </blog>
+          <blog>
+            <h1 class="heading-text">CSS Tips and Tricks.css</h1>
+            <p class="body-text">Here we give our best tricks and tips for writing clean efficient CSS and what you can do to improve your code.</p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+          </blog>
+          <blog>
+            <h1 class="heading-text">HTML Accessibility.html</h1>
+            <p class="body-text">One of the best way that you can improve your HTML is by making it accessible to all users, whether they are on different screen sizes or use a screen reader, this article tells you everything you need to know to improve your HTML accessibility.</p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+          </blog>
+        </div>
+        <div id="photos">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section>
+      <section id="contact-page">
+        <form action="mailto:frontendsolutionsdev@gmail.com">
+          <label for="name-input" class="body-text">Name:</label>
+          <input
+            class="body-text"
+            type="text"
+            placeholder="Name"
+            id="name-input"
+          />
+          <label for="contact-reason" class="body-text">Contact Reason:</label>
+          <select class="body-text" name="contact-reason" id="contact-reason">
+            <option class="body-text" value="new-customer">New customer</option>
+            <option class="body-text" value="existing-customer">
+              Existing customer
+            </option>
+            <option class="body-text" value="collaboration">
+              Collaboration
+            </option>
+            <option class="body-text" value="enquiry">Enquiry</option>
+            <option class="body-text" value="other">Other</option>
+          </select>
+          <label for="email-input" class="body-text">Email:</label>
+          <input
+            class="body-text"
+            type="text"
+            placeholder="Email"
+            id="email-input"
+          />
+          <label for="message-input" class="body-text">Message:</label>
+          <textarea
+            class="body-text"
+            name="message-input"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
