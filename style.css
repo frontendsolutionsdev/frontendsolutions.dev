@@ -1,3 +1,5 @@
+/* Callum */
+
 * {
   box-sizing: border-box;
 }
@@ -18,6 +20,10 @@ p {
 
 html:focus-within {
   scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
 }
 
 /* Set body defaults */
@@ -76,7 +82,6 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
-  height: 100vh;
 }
 
 main {
@@ -97,7 +102,7 @@ main {
 .nav-text {
   color: var(--tertiary);
   font-family: Consolas;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -116,10 +121,9 @@ main {
 .heading-text {
   color: var(--tertiary);
   font-family: "Playfair Display", serif;
-  font-size: 6.25rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 90px;
 }
 
 .body-text {
@@ -128,8 +132,6 @@ main {
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 100;
-  line-height: normal;
-  margin-top: 2rem;
 }
 
 .call-to-action-text {
@@ -151,14 +153,13 @@ main {
 
 section {
   display: none;
-  padding: 14vh 4vw 3vh 4vw;
+  padding: calc(80px + 3vh) 4vw 6vh 4vw;
   height: 100%;
 }
 
-@media screen and (max-width:800px) {
-  section {
-    padding: 75px 4vw 3vh 4vw;
-  }
+main .nav-text:hover {
+  transition: none;
+  color: var(--tertiary);
 }
 
 /* Header */
@@ -200,11 +201,14 @@ nav {
 }
 
 #moon,
-#sun {
+#sun,
+#mobile-moon,
+#mobile-sun {
   font-size: 30px;
 }
 
-#sun {
+#sun,
+#mobile-sun {
   display: none;
 }
 
@@ -240,9 +244,13 @@ nav {
   justify-content: center;
 }
 
-#mobileNav #navList{
+#mobileNav #navList {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 0;
+  gap: 3px;
+  margin-bottom: 5px;
 }
 
 #mobileNav #navList * {
@@ -270,6 +278,18 @@ nav {
   display: block;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20px;
+}
+
+#home-page .heading-text {
+  font-size: 100px;
+}
+
 #heading-text__frontend {
   color: var(--highlight);
 }
@@ -281,8 +301,7 @@ nav {
 }
 
 #home-page .body-text {
-  width: clamp(400px, 70vw, 2000px);
-  margin-bottom: 12vh;
+  width: clamp(300px, 75vw, 2000px);
 }
 
 #call-to-action__arrow {
@@ -295,17 +314,21 @@ nav {
 }
 
 #links {
-  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 #social-media-links {
   float: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-media-link {
   font-size: 50px;
   color: var(--tertiary);
-  margin: 0 10px;
+  margin: 0 16px;
   transition: 0.3s ease-in-out;
 }
 
@@ -321,40 +344,57 @@ nav {
   color: #34a853;
 }
 
-.linkedin:hover {
-  color: #0a66c2;
+.twitter:hover {
+  color: #00acee;
 }
 
 @media screen and (max-width: 640px) {
   #home-page .heading-text {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
+  }
+
+  #home-page .body-text {
+    width: 100%;
+  }
+
+  #links {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+  #home-page .body-text {
+    width: 100%;
+    font-size: 2.5rem;
+  }
 
+  #home-page .heading-text {
+    font-size: 6rem;
+  }
+
+  #links {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1008px) {
-
-  }
-
+}
 
 /* About page styles*/
 
-#content {
+.content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-#content .heading-text {
-  font-size: 3.5rem;
+#about-page .heading-text {
   color: var(--highlight);
 }
 
-#content .body-text {
-  font-size: 1.5rem;
-  margin-top: 0;
+#about-page .content {
+  gap: 20px;
 }
 
 #about-page #call-to-action {
@@ -368,14 +408,11 @@ nav {
   color: var(--highlight);
 }
 
-#call-to-action {
-  margin-top: 70px;
-}
-
 #about-page .body-text {
   width: 90%;
 }
 
+/* Reuben */
 /* Portfolio page styles*/
 
 #articles .unknown-image {
@@ -385,7 +422,7 @@ nav {
 
 #articles {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #articles .heading-text {
@@ -399,7 +436,7 @@ nav {
   columns: var();
 }
 
-#portfolio-page .body-text{
+#portfolio-page .body-text {
   width: clamp(400px, 50vw, 2000px);
   margin-bottom: -0.7vh;
   color: var(--tertiary);
@@ -412,35 +449,32 @@ nav {
 }
 
 @media screen and (max-width: 640px) {
-  #portfolio-page .unknown-image{
+  #portfolio-page .unknown-image {
     margin-top: 2vh;
-    } 
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-  #portfolio-page .unknown-image{
+  #portfolio-page .unknown-image {
     display: none;
-    } 
+  }
 }
 
-
 @media screen and (min-width: 1008px) {
-  #portfolio-page .unknown-image{
-  display: none;
+  #portfolio-page .unknown-image {
+    display: none;
   }
-
 }
 
 /* Blog page styles */
-  #blogs .unknown-image {
+#blogs .unknown-image {
   background: var(--secondary);
   border-radius: 20%;
 }
 
-
 #blogs {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #blogs .heading-text {
@@ -454,7 +488,7 @@ nav {
   columns: var();
 }
 
-#blog-page .body-text{
+#blog-page .body-text {
   width: clamp(400px, 50vw, 2000px);
   margin-bottom: -0.7vh;
   color: var(--tertiary);
@@ -467,30 +501,34 @@ nav {
 }
 
 @media screen and (max-width: 640px) {
-  #blog-page .unknown-image{
+  #blog-page .unknown-image {
     margin-top: 2vh;
-
-    } 
-  #blog-page .heading-text { 
-    line-height: 3.5rem; 
+  }
+  #blog-page .heading-text {
+    line-height: 3.5rem;
     margin-bottom: 0vh;
     margin-top: 1vh;
-    }
-}
-
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-  #blog-page .unknown-image{
-    display: none;
-    }
-}
-
-@media screen and (min-width: 1008px) {
-  #blog-page .unknown-image{
-  display: none;
   }
 }
 
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  #blog-page .unknown-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  #blog-page .unknown-image {
+    display: none;
+  }
+}
+
+/* Callum */
 /* Contact page styles */
+
+#contact-page {
+  height: 100vh;
+}
 
 form {
   display: flex;
@@ -548,4 +586,16 @@ input[type="submit"] {
   line-height: normal;
   margin-top: 2rem;
   vertical-align: middle;
+}
+
+#thank-you-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4vw;
+}
+
+#thank-you-page .heading-text {
+  font-size: 6vw;
 }

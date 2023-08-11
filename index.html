@@ -1,3 +1,5 @@
+<!-- Callum -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +36,7 @@
                 >About</a
               >
             </li>
-            <li>
+            <!-- <li>
               <a
                 id="portfolio"
                 class="nav-text"
@@ -44,7 +46,7 @@
             </li>
             <li>
               <a id="blog" class="nav-text" onclick="displayBlogPage()">Blog</a>
-            </li>
+            </li> -->
             <li>
               <a id="contact" class="nav-text" onclick="displayContactPage()"
                 >Contact</a
@@ -60,102 +62,123 @@
       <nav id="mobileNav">
         <ul id="navList">
           <li>
-            <a id="home" class="nav-text active" onclick="displayHomePage()"
+            <a
+              id="mobile-home"
+              class="nav-text active"
+              onclick="displayHomePage()"
               >Home</a
             >
           </li>
           <li>
-            <a id="about" class="nav-text" onclick="displayAboutPage()"
+            <a id="mobile-about" class="nav-text" onclick="displayAboutPage()"
               >About</a
             >
           </li>
-          <li>
-            <a id="portfolio" class="nav-text" onclick="displayPortfolioPage()"
+          <!-- <li>
+            <a
+              id="mobile-portfolio"
+              class="nav-text"
+              onclick="displayPortfolioPage()"
               >Portfolio</a
             >
           </li>
           <li>
-            <a id="blog" class="nav-text" onclick="displayBlogPage()">Blog</a>
-          </li>
+            <a id="mobile-blog" class="nav-text" onclick="displayBlogPage()"
+              >Blog</a
+            >
+          </li> -->
           <li>
-            <a id="contact" class="nav-text" onclick="displayContactPage()"
+            <a
+              id="mobile-contact"
+              class="nav-text"
+              onclick="displayContactPage()"
               >Contact</a
             >
           </li>
         </ul>
         <button id="toggle-mode" onclick="modeChange()">
-          <ion-icon name="moon-outline" class="nav-text" id="moon"></ion-icon>
-          <ion-icon name="sunny-outline" class="nav-text" id="sun"></ion-icon>
+          <ion-icon
+            name="moon-outline"
+            class="nav-text"
+            id="mobile-moon"
+          ></ion-icon>
+          <ion-icon
+            name="sunny-outline"
+            class="nav-text"
+            id="mobile-sun"
+          ></ion-icon>
         </button>
       </nav>
     </header>
     <main>
       <section id="home-page" class="active-page">
-        <h1 class="heading-text">
-          Welcome to <br /><span id="heading-text__frontend">Frontend</span>
-          <span id="heading-text__solutions">Solutions</span>
-        </h1>
-        <h2 class="body-text">
-          We are Frontend Solutions; a web design team based in Chester, UK. We
-          are a team of aspiring computer scientists that specialise in
-          bringing businesses to the world wide web.
-        </h2>
-        <div id="links">
-          <a id="call-to-action" onclick="displayContactPage()">
-            <h2 class="call-to-action-text">CONTACT</h2>
-            <ion-icon
-              id="call-to-action__arrow"
-              name="arrow-back-outline"
-            ></ion-icon>
-          </a>
-          <div id="social-media-links">
-            <a href="https://github.com/frontendsolutionsdev">
+        <div class="container">
+          <h1 class="heading-text">
+            Welcome to <br /><span id="heading-text__frontend">Frontend</span>
+            <span id="heading-text__solutions">Solutions</span>
+          </h1>
+          <h2 class="body-text">
+            We are Frontend Solutions; a web design team based in Chester, UK.
+            We are a team of aspiring computer scientists that specialise in
+            bringing businesses to the world wide web.
+          </h2>
+          <div id="links">
+            <a id="call-to-action" onclick="displayContactPage()">
+              <h2 class="call-to-action-text">CONTACT</h2>
               <ion-icon
-                name="logo-github"
-                class="social-media-link github"
+                id="call-to-action__arrow"
+                name="arrow-back-outline"
               ></ion-icon>
             </a>
-            <a href="https://www.instagram.com/frontendsolutionsdev/">
-              <ion-icon
-                name="logo-instagram"
-                class="social-media-link instagram"
-              ></ion-icon>
-            </a>
-            <a href="mailto:frontendsolutionsdev@gmail.com">
-              <ion-icon
-                name="mail-outline"
-                class="social-media-link mail-outline"
-              ></ion-icon>
-            </a>
-            <a href="">
-              <ion-icon
-                name="logo-linkedin"
-                class="social-media-link linkedin"
-              ></ion-icon>
-            </a>
+            <div id="social-media-links">
+              <a href="https://github.com/frontendsolutionsdev">
+                <ion-icon
+                  name="logo-github"
+                  class="social-media-link github"
+                ></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/frontendsolutionsdev/">
+                <ion-icon
+                  name="logo-instagram"
+                  class="social-media-link instagram"
+                ></ion-icon>
+              </a>
+              <a href="mailto:frontendsolutionsdev@gmail.com">
+                <ion-icon
+                  name="mail-outline"
+                  class="social-media-link mail-outline"
+                ></ion-icon>
+              </a>
+              <a href="https://twitter.com/frontendso">
+                <ion-icon
+                  name="logo-twitter"
+                  class="social-media-link twitter"
+                ></ion-icon>
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section id="about-page">
-        <div id="content">
-          <div>
+        <div class="container">
+          <div class="content">
             <h3 class="nav-text">C:\Users\frontend-solutions\about</h3>
             <h1 class="heading-text">About Us:</h1>
             <p class="body-text">
-              Frontend Solutions is a digital solutions provider that
-              specializes in custom website design services, social media
-              management/creation in the United Kingdom.
+              Frontend Solutions is a web design team that specializes in custom
+              website design services, social media management and creation in
+              the United Kingdom.
             </p>
             <h1 class="heading-text">Why Choose Frontend Solutions?</h1>
             <p class="body-text">
-              Frontend Solutions believes in bringing businesses ideas to life.
-              Which is why we focus on bringing you dream to the world wide web,
-              down to the minute details.
+              Frontend Solutions believes in bringing business ideas to life.
+              That is why we focus on bringing your dream to the world wide web,
+              down to the last details.
             </p>
             <h1 class="heading-text">What we offer:</h1>
             <p class="body-text">
-              -Bespoke web design <br />-Other similar stuff <br />-More similar
-              stuff
+              -Bespoke web design <br />-SEO (Search Engine Optimisation)
+              <br />-Social Media Management
             </p>
           </div>
           <a id="call-to-action" onclick="displayContactPage()">
@@ -165,30 +188,44 @@
           </a>
         </div>
       </section>
-      <section id="portfolio-page">
+
+      <!-- Reuben -->
+
+      <!-- <section id="portfolio-page">
         <div id="articles">
-          <article>
           <h3 class="nav-text">C:\Users\frontend-solutions\portfolio</h3>
-            <article>
+          <article>
             <h1 class="heading-text">Maths.sql</h1>
-            <p class="body-text">A beautiful website designed to provide high school students
-               with a wealth of resources to aid them in their studies.</p>
-            <img class="unknown-image" src="/Photos/unknown-image.png" alt="unknown">
+            <p class="body-text">
+              A beautiful website designed to provide high school students with
+              a wealth of resources to aid them in their studies.
+            </p>
+            <img
+              class="unknown-image"
+              src="/Photos/unknown-image.png"
+              alt="unknown"
+            />
           </article>
           <article>
             <h1 class="heading-text">Instructor.html</h1>
-            <p class="body-text">A sleek professional website to match the sleek skills of Reubens driving instructor.</p>
-            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+            <p class="body-text">
+              A sleek professional website to match the sleek skills of Reubens
+              driving instructor.
+            </p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="" />
           </article>
           <article>
             <h1 class="heading-text">Snug.html</h1>
-            <p class="body-text">A gorgeous website advertising the incredible new line of fireplaces by snug.</p>
-            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+            <p class="body-text">
+              A gorgeous website advertising the incredible new line of
+              fireplaces by snug.
+            </p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="" />
           </article>
           <article>
             <h1 class="heading-text">Toms Joinery.css</h1>
             <p class="body-text">Toms wood.</p>
-            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="" />
           </article>
         </div>
         <div id="photos">
@@ -200,41 +237,66 @@
       </section>
       <section id="blog-page">
         <div id="blogs">
-          <blog>
           <h3 class="nav-text">C:\Users\frontend-solutions\blog</h3>
-            <blog>
+          <article>
             <h1 class="heading-text">Best JavaScript Framework.js</h1>
-            <p class="body-text">Read our newest article where we evaluate which JavaScript Framework is the best in 2023 where we give a breakdown of which task each one is suited to, plus the advantages, disadvantages and any little quirks of any of each framework.</p>
-            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
-          </blog>
-          <blog>
+            <p class="body-text">
+              Read our newest article where we evaluate which JavaScript
+              Framework is the best in 2023 where we give a breakdown of which
+              task each one is suited to, plus the advantages, disadvantages and
+              any little quirks of any of each framework.
+            </p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="" />
+          </article>
+          <article>
             <h1 class="heading-text">CSS Tips and Tricks.css</h1>
-            <p class="body-text">Here we give our best tricks and tips for writing clean efficient CSS and what you can do to improve your code.</p>
-            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
-          </blog>
-          <blog>
+            <p class="body-text">
+              Here we give our best tricks and tips for writing clean efficient
+              CSS and what you can do to improve your code.
+            </p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="" />
+          </article>
+          <article>
             <h1 class="heading-text">HTML Accessibility.html</h1>
-            <p class="body-text">One of the best way that you can improve your HTML is by making it accessible to all users, whether they are on different screen sizes or use a screen reader, this article tells you everything you need to know to improve your HTML accessibility.</p>
-            <img class="unknown-image" src="/Photos/unknown-image.png" alt="">
-          </blog>
+            <p class="body-text">
+              One of the best way that you can improve your HTML is by making it
+              accessible to all users, whether they are on different screen
+              sizes or use a screen reader, this article tells you everything
+              you need to know to improve your HTML accessibility.
+            </p>
+            <img class="unknown-image" src="/Photos/unknown-image.png" alt="" />
+          </article>
         </div>
         <div id="photos">
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
         </div>
-      </section>
+      </section> -->
+
+      <!-- Callum -->
+
       <section id="contact-page">
-        <form action="mailto:frontendsolutionsdev@gmail.com">
+        <form
+          action="https://formsubmit.co/4861e55e5566c8a76d6d853acaebbf82"
+          method="POST"
+        >
           <label for="name-input" class="body-text">Name:</label>
           <input
             class="body-text"
             type="text"
+            name="name"
             placeholder="Name"
             id="name-input"
+            required
           />
           <label for="contact-reason" class="body-text">Contact Reason:</label>
-          <select class="body-text" name="contact-reason" id="contact-reason">
+          <select
+            class="body-text"
+            name="contact-reason"
+            id="contact-reason"
+            required
+          >
             <option class="body-text" value="new-customer">New customer</option>
             <option class="body-text" value="existing-customer">
               Existing customer
@@ -248,17 +310,25 @@
           <label for="email-input" class="body-text">Email:</label>
           <input
             class="body-text"
-            type="text"
+            type="email"
+            name="email"
             placeholder="Email"
             id="email-input"
+            required
           />
           <label for="message-input" class="body-text">Message:</label>
           <textarea
             class="body-text"
             name="message-input"
             placeholder="Message"
+            required
           ></textarea>
           <input type="submit" value="Send" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://frontendsolutions.dev/thanks.html"
+          />
         </form>
       </section>
     </main>

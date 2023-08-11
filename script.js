@@ -1,3 +1,5 @@
+// Callum
+
 const x = document.querySelector(":root");
 const dark = ["#222831", "#393e46", "#eeeeee"];
 const light = ["#eeeeee", "#D7D7D7", "#222831"];
@@ -11,6 +13,8 @@ function modeChange() {
   if (mode === true) {
     document.getElementById("sun").style.display = "block";
     document.getElementById("moon").style.display = "none";
+    document.getElementById("mobile-sun").style.display = "block";
+    document.getElementById("mobile-moon").style.display = "none";
     x.style.setProperty("--primary", light[0]);
     x.style.setProperty("--secondary", light[1]);
     x.style.setProperty("--tertiary", light[2]);
@@ -18,6 +22,8 @@ function modeChange() {
   } else {
     document.getElementById("sun").style.display = "none";
     document.getElementById("moon").style.display = "block";
+    document.getElementById("mobile-sun").style.display = "none";
+    document.getElementById("mobile-moon").style.display = "block";
     x.style.setProperty("--primary", dark[0]);
     x.style.setProperty("--secondary", dark[1]);
     x.style.setProperty("--tertiary", dark[2]);
@@ -26,6 +32,7 @@ function modeChange() {
 }
 
 let active = "home";
+const mobile = document.getElementById("mobileNav");
 
 
 function displayHomePage() {
@@ -35,6 +42,9 @@ function displayHomePage() {
 
     document.querySelector(".active").classList.remove("active");
     document.getElementById("home").classList.add("active");
+
+    document.getElementById("mobileNav").querySelector(".active").classList.remove("active");
+    document.getElementById("mobile-home").classList.add("active");
     active = "home";
   }
 }
@@ -46,6 +56,9 @@ function displayAboutPage() {
 
     document.querySelector(".active").classList.remove("active");
     document.getElementById("about").classList.add("active");
+
+    document.getElementById("mobileNav").querySelector(".active").classList.remove("active");
+    document.getElementById("mobile-about").classList.add("active");
     active = "about"
   }
 }
@@ -57,6 +70,9 @@ function displayPortfolioPage() {
 
     document.querySelector(".active").classList.remove("active");
     document.getElementById("portfolio").classList.add("active");
+
+    document.getElementById("mobileNav").querySelector(".active").classList.remove("active");
+    document.getElementById("mobile-portfolio").classList.add("active");
     active = "portfolio"
   }
 }
@@ -68,6 +84,9 @@ function displayBlogPage() {
 
     document.querySelector(".active").classList.remove("active");
     document.getElementById("blog").classList.add("active");
+
+    document.getElementById("mobileNav").querySelector(".active").classList.remove("active");
+    document.getElementById("mobile-blog").classList.add("active");
     active = "blog"
   }
 }
@@ -79,6 +98,9 @@ function displayContactPage() {
 
     document.querySelector(".active").classList.remove("active");
     document.getElementById("contact").classList.add("active");
+
+    document.getElementById("mobileNav").querySelector(".active").classList.remove("active");
+    document.getElementById("mobile-contact").classList.add("active");
     active = "contact"
   }
 }
