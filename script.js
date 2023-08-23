@@ -115,3 +115,8 @@ function displayMobileNavigation() {
     nav.style.display = "flex"
   }
 }
+
+function screenWidthChange() {
+  let nav = document.getElementById("mobileNav")
+  nav.style.display = "none"
+}

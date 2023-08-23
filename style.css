@@ -332,6 +332,10 @@ nav {
   transition: 0.3s ease-in-out;
 }
 
+.facebook:hover {
+  color: #1877F2;
+}
+
 .github:hover {
   color: #171515;
 }
@@ -342,10 +346,6 @@ nav {
 
 .mail-outline:hover {
   color: #34a853;
-}
-
-.twitter:hover {
-  color: #00acee;
 }
 
 @media screen and (max-width: 640px) {

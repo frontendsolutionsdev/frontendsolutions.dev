@@ -15,7 +15,7 @@
     />
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onresize="screenWidthChange()">
     <header>
       <div id="navFlex">
         <a href="index.html" id="logo">
@@ -131,6 +131,12 @@
               ></ion-icon>
             </a>
             <div id="social-media-links">
+              <a href="https://www.facebook.com/profile.php?id=61550683766104">
+                <ion-icon
+                  name="logo-facebook"
+                  class="social-media-link facebook"
+                ></ion-icon>
+              </a>
               <a href="https://github.com/frontendsolutionsdev">
                 <ion-icon
                   name="logo-github"
@@ -147,12 +153,6 @@
                 <ion-icon
                   name="mail-outline"
                   class="social-media-link mail-outline"
-                ></ion-icon>
-              </a>
-              <a href="https://twitter.com/frontendso">
-                <ion-icon
-                  name="logo-twitter"
-                  class="social-media-link twitter"
                 ></ion-icon>
               </a>
             </div>
